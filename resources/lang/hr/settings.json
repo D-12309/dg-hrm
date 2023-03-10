@@ -1,0 +1,16 @@
+{
+    "Language": "Language",
+    "Activation": "Activation",
+    "Time format": "Time format",
+    "12\r\n                                                                                            HOURS": "12\r\n                                                                                            HOURS",
+    "24\r\n                                                                                            HOURS": "24\r\n                                                                                            HOURS",
+    "IP Address Bind": "IP Address Bind",
+    "User IP Bind": "User IP Bind",
+    "Location Bind": "Location Bind",
+    "Enable": "Enable",
+    "Disable": "Disable",
+    "Multiple Check In & Check\r\n                                                                        Out": "Multiple Check In & Check\r\n                                                                        Out",
+    "Live Tracking": "Live Tracking",
+    "User wise Permission": "User wise Permission",
+    "Settings updated successfully": "Settings updated successfully"
+}

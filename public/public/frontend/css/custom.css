@@ -1,0 +1,86 @@
+/* add vehicle error  */
+input.form-control.field-is-required {
+    border: 1px solid red !important;
+}
+
+/* home page  */
+
+.front-page-store-btn {
+    gap: 15px;
+}
+
+/* pricing page  */
+
+.all-pricing-includes {
+    padding: 0;
+}
+
+.all-pricing-includes ul {
+    columns: 2;
+    -webkit-columns: 2;
+    padding: 15px;
+}
+
+.all-pricing-includes ul li {
+    list-style: circle;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+.all-pricing-includes ul li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* login page  */
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+/* sign up page  */
+.already-have-an-account {
+    font-size: 16px;
+    letter-spacing: initial;
+}
+
+.business-tabs .nav-link {
+    text-align: right;
+}
+
+/* login page logo  */
+
+.sidebar-top-side {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.default-login-container {
+    max-width: 500px;
+    border-radius: 5px;
+    overflow-x: hidden;
+    font-size: 12px;
+}
+
+.default-login-container table thead th {
+    font-size: 18px !important;
+}
+
+.default-login-container table thead th,
+.default-login-container table tbody td {
+    text-align: left !important;
+}

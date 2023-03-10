@@ -1,0 +1,226 @@
+.place-switch {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.place-switch .switch-field {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background-color: #7f58fe;
+  padding: 2px;
+  border-radius: 2rem;
+}
+
+.place-switch .switch-field input {
+  display: none;
+}
+
+.place-switch .switch-field label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: transparent;
+  color: #333;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: none;
+  padding: 0.5em 1em;
+  margin: 0;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: #fff;
+}
+
+.place-switch .switch-field label p {
+  margin: 0;
+  color: #fff;
+  font-weight: 400;
+}
+.place-switch .switch-field:hover {
+  cursor: pointer;
+}
+.place-switch .switch-field input:checked + label {
+  background-color: #fff;
+  color: #7f58fe;
+  border-radius: 50px;
+}
+.place-switch .switch-field input:checked + label p {
+  color: #7f58fe;
+}
+
+/* button hold  */
+
+.button-hold-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-hold {
+  --color: #f6f8ff;
+  --background: #2b3044;
+  --icon: var(--color);
+  --progress-border: #646b8c;
+  --progress-active: #fff;
+  --progress-success: #5c86ff;
+  --tick-stroke: var(--progress-active);
+  --shadow: rgba(0, 9, 61, 0.2);
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  border: 0;
+  outline: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  -webkit-backface-visibility: hidden;
+  -webkit-appearance: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  transform: scale(var(--scale, 1)) translateZ(0);
+  color: var(--color);
+
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-holdton:focus, .button-holdton:active, .button-hold:focus-visible {
+  border: none;
+  outline: none;
+}
+
+.button-hold > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-hold:focus{
+  outline: none;
+  border: none;
+}
+
+.button-hold > div:before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f0a6";
+  font-size: 32px;
+  z-index: 1;
+  position: absolute;
+  border-radius: inherit;
+  transform: scale(var(--background-scale, 1));
+  transition: transform 0.32s ease;
+}
+.button-hold > div svg {
+  display: block;
+}
+.button-hold > div svg.icon,
+.button-hold > div svg.tick {
+  position: absolute;
+}
+.button-hold > div svg.icon {
+  width: 8px;
+  height: 8px;
+  left: 6px;
+  top: 6px;
+  fill: var(--icon);
+  z-index: 1;
+  transition: opacity 0.2s, transform 0.2s;
+  opacity: var(--icon-opacity, 1);
+  transform: translateY(var(--icon-y, 0)) scale(var(--icon-scale, 1));
+}
+.button-hold > div svg.progress,
+.button-hold > div svg.tick {
+  fill: none;
+}
+.button-hold > div svg.progress {
+  width: 125px;
+  height: 125px;
+  background: linear-gradient(90deg, #0f6aff 0%, #21c6fb 100%);
+  border-radius: 50%;
+  transform: rotate(-180deg) scale(var(--progress-scale, 1));
+  transition: transform 0.5s ease;
+}
+.checkout_switch {
+  background: linear-gradient(90deg, #ff0f0f  0%, #fb215687  100%) !important;
+}
+.button-hold > div svg.progress circle {
+  stroke-dashoffset: 1;
+  stroke-dasharray: var(--progress-array, 0) 52;
+  stroke-width: 16;
+  stroke: var(--progress-active);
+  transition: stroke-dasharray var(--duration) linear;
+}
+.button-hold > div svg.tick {
+  width: 125px;
+  height: 125px;
+  left: 15px;
+  top: 10px;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: var(--tick-stroke);
+  transition: stroke 0.3s ease 0.7s;
+}
+.button-hold > div svg.tick polyline {
+  stroke-dasharray: 18 18 18;
+  stroke-dashoffset: var(--tick-offset, 18);
+  transition: stroke-dashoffset 0.4s ease 0.7s;
+}
+.button-hold:focus:not(.process),
+.button-hold:hover:not(.process) {
+  --shadow-y: 8px;
+  --shadow-blur: 16px;
+}
+.button-hold:active:not(.success) {
+  --scale: 0.96;
+  --shadow-y: 4px;
+  --shadow-blur: 8px;
+}
+.button-hold.process,
+.button-hold.success {
+  --progress-array: 52;
+  --icon-y: -4px;
+  --icon-scale: 0.6;
+  --icon-opacity: 0;
+}
+.button-hold.success {
+  --progress-border: none;
+  --progress-scale: 0.11;
+  --tick-stroke: var(--progress-success);
+  --background-scale: 0;
+  --tick-offset: 36;
+}
+.button-hold.success > div svg.progress {
+  -webkit-animation: tick 0.3s linear forwards 0.4s;
+  animation: tick 0.3s linear forwards 0.4s;
+}
+
+@-webkit-keyframes tick {
+  100% {
+    transform: rotate(-90deg) translate(0, -5px) scale(var(--progress-scale));
+  }
+}
+
+@keyframes tick {
+  100% {
+    transform: rotate(-90deg) translate(0, -5px) scale(var(--progress-scale));
+  }
+}
+

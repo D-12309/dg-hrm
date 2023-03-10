@@ -1,0 +1,33 @@
+/node_modules
+/public/hot
+/public/storage
+/resources/lang/bn.json
+/resources/lang/en.json
+/resources/lang/permission.json
+/storage/*.key
+/vendor 
+.env
+.env.backup
+.phpunit.result.cache
+docker-compose.override.yml
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/.idea
+/.vscode
+composer.lock
+vendor/composer/
+!storage/app/public/uploads/settings/logo/logo-dark.png
+!storage/app/public/uploads/settings/logo/logo-white.png
+# storage/uploads/settings/logo/logo.png
+# storage/uploads/settings/logo/favicon.png
+package-lock.json
+public/uploads
+node_modules
+node_modules/*
+storage
+storage/*
+/bootstrap
+/resources/lang/en
+
